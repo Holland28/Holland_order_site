@@ -6,6 +6,8 @@ let mapWidget = document.getElementById('map')
 let shopChoise = document.getElementById('selectshop')
 let commentChoise = document.getElementById('comment')
 
+commentChoise.disabled = true
+
 tg.MainButton.setParams(
 	{
 	'text': 'Продолжить далее',
@@ -18,6 +20,7 @@ tg.MainButton.setParams(
 
 let timeChoise = document.getElementById('getorder-time')
 timeChoise.min = new Date().toISOString().slice(0, -8)
+timeChoise.disabled = true
 
 let shops = {
 	'АМИ': [[55.82862, 49.13423], 'ул. Ф. Амирхана, 10', 'Казань, Ново-Савиновский район', 'ami'],
@@ -500,6 +503,7 @@ DG.then(function () {
 
 function blink(element){
 	if (element.value != '') {return}
+	element.disabled = false
 	element.scrollIntoView()
 	element.focus()
 	element.style.backgroundColor = "#FFFFFF"
