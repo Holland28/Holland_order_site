@@ -95,7 +95,7 @@ for (key in shops){
 }	
 
 
-
+/*
 DG.then(function () {
    let map, myLocation
    map = DG.map('map', {
@@ -104,7 +104,17 @@ DG.then(function () {
    minZoom: 10,
    fullscreenControl: false
    })
+*/
 
+DG.then(function () {
+   let map, myLocation
+   map = DG.map('map', {
+   center: [55.79, 49.12],
+   zoom: 12,
+   minZoom: 12,
+   fullscreenControl: false
+   })
+	
 	shopChoise.onchange = function changeShop () {
 		map.setView(center=shops[shopChoise.value][0], zoom=16)
 		markerTarget=DG.marker(shops[shopChoise.value][0])
