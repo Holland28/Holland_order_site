@@ -111,7 +111,7 @@ DG.then(function () {
 		shops[shopChoise.value][3].openPopup()
 		blink(timeChoise)
 	}
-
+/*
 
 	shops['АМИ'][3] = DG.marker(shops['АМИ'][0])
 		.on('click', function() {
@@ -121,7 +121,7 @@ DG.then(function () {
 		})
 		.addTo(map)
 		.bindPopup(shops['АМИ'][1])
-
+*/
 	shops['БАУ'][3] = DG.marker(shops['БАУ'][0])
 		.on('click', function() {
 			shopChoise.value = 'БАУ'
@@ -130,7 +130,7 @@ DG.then(function () {
 		})
 		.addTo(map)
 		.bindPopup(shops['БАУ'][1])
-
+/*
 	shops['БЕЛ'][3] = DG.marker(shops['БЕЛ'][0])
 		.on('click', function() {
 			shopChoise.value = 'БЕЛ'
@@ -148,7 +148,7 @@ DG.then(function () {
 		})
 		.addTo(map)
 		.bindPopup(shops['БИГ'][1])
-
+*/
 	shops['ВИШ'][3] = DG.marker(shops['ВИШ'][0])
 		.on('click', function() {
 			shopChoise.value = 'ВИШ'
@@ -157,7 +157,7 @@ DG.then(function () {
 		})
 		.addTo(map)
 		.bindPopup(shops['ВИШ'][1])
-
+/*
 	shops['ВОС'][3] = DG.marker(shops['ВОС'][0])
 		.on('click', function() {
 			shopChoise.value = 'ВОС'
@@ -445,7 +445,7 @@ DG.then(function () {
 		})
 		.addTo(map)
 		.bindPopup(shops['ЧЕТ'][1])
-	
+*/	
 	shops['ЧЕХ'][3] = DG.marker(shops['ЧЕХ'][0])
 		.on('click', function() {
 			shopChoise.value = 'ЧЕХ'
@@ -454,7 +454,7 @@ DG.then(function () {
 		})
 		.addTo(map)
 		.bindPopup(shops['ЧЕХ'][1])
-
+/*
 	shops['ЧИС'][3] = DG.marker(shops['ЧИС'][0])
 		.on('click', function() {
 			shopChoise.value = 'ЧИС'
@@ -499,6 +499,7 @@ DG.then(function () {
 		})
 		.addTo(map)
 		.bindPopup(shops['СТЛ'][1])
+  */
 })
 
 function blink(element){
