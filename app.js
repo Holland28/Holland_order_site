@@ -437,7 +437,7 @@ DG.then(function () {
 		})
 		.addTo(map)
 		.bindPopup(shops['ФУЧ'][1])
-*/		
+		
 	shops['Ч15'][3] = DG.marker(shops['Ч15'][0])
 		.on('click', function() {
 			shopChoise.value = 'Ч15'
@@ -446,7 +446,7 @@ DG.then(function () {
 		})
 		.addTo(map)
 		.bindPopup(shops['Ч15'][1])
-/*	
+	
 	shops['ЧЕТ'][3] = DG.marker(shops['ЧЕТ'][0])
 		.on('click', function() {
 			shopChoise.value = 'ЧЕТ'
