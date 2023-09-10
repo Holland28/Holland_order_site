@@ -548,6 +548,11 @@ Telegram.WebApp.onEvent('mainButtonClicked', function () { //тут сообще
 		return
 	}
 	if (!comment) {comment = 'Без комментариев'}
-	tg.sendData(`${shop_code}|${time}|${comment}`)
+	let workhours = {
+		monfri: '8-20',
+		sat: '8-20',
+		sun: 'off'
+	}
+	tg.sendData(`${shop_code}|${time}|${comment}|${workhours}`)
 	
 })
