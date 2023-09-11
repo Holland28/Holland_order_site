@@ -36,7 +36,7 @@ let shops = {
 	'ВИШ': [[55.784503, 49.14964], 'ул. Вишневского, 14', 'Казань, Вахитовский район', 'vish', {
 		monfri: '8-20',
 		sat: '8-20',
-		sun: '8-20'
+		sun: ''
 	}],
 /*	
 	'ВОС': [[55.832655, 49.062536], 'ул. ​Восстания, 83а', 'Казань, Московский район', 'vos'],
@@ -552,6 +552,9 @@ function blink(element){
 
 function genWorkTime(shop){
 	let data = shops[shop][4]
+	for (key in data) {
+		if !!data.key {data.key = 'Закр'}
+	}
 	return `ПН-ПТ ${data.monfri} <br>
 		СБ ${data.sat} <br>
 		ВС ${data.sun}`
