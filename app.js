@@ -157,7 +157,7 @@ DG.then(function () {
 			blink(timeChoise)
 		})
 		.addTo(map)
-		.bindPopup(`<p>${shops['БАУ'][1])}<br />${shops['БАУ'][4])}</p>`)
+		.bindPopup(`${shops['БАУ'][1]}\n ${shops['БАУ'][4]}`)
 			
 			   
 /*
