@@ -567,6 +567,11 @@ Telegram.WebApp.onEvent('mainButtonClicked', function () { //тут сообще
 	}
 	if (!comment) {comment = 'Без комментариев'}
 	let workhours = shops[shopChoise.value][4]
-	tg.sendData(`${shop_code}|${time}|${comment}|${JSON.stringify(workhours)}`)
+	tg.sendData(JSON.stringify({
+		shop_code,
+		time,
+		comment,
+		workhours		
+	}))
 	
 })
