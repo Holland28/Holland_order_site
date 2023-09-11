@@ -157,7 +157,7 @@ DG.then(function () {
 			blink(timeChoise)
 		})
 		.addTo(map)
-		.bindPopup(`${shops['БАУ'][1]} <br><br> <i>${genWorkTime('БАУ')}`)
+		.bindPopup(`${shops['БАУ'][1]} <br><b>Работаем для вас:</b><br> <i>${genWorkTime('БАУ')}`)
 			
 			   
 /*
@@ -186,7 +186,7 @@ DG.then(function () {
 			blink(timeChoise)
 		})
 		.addTo(map)
-		.bindPopup(`${shops['ВИШ'][1]} <br><br> <i>${genWorkTime('ВИШ')}`)
+		.bindPopup(`${shops['ВИШ'][1]} <br><b>Работаем для вас:</b><br> <i>${genWorkTime('ВИШ')}`)
 /*
 	shops['ВОС'][3] = DG.marker(shops['ВОС'][0])
 		.on('click', function() {
@@ -483,7 +483,7 @@ DG.then(function () {
 			blink(timeChoise)
 		})
 		.addTo(map)
-		.bindPopup(`${shops['ЧЕХ'][1]} <br><br> <i>${genWorkTime('ЧЕХ')}`)
+		.bindPopup(`${shops['ЧЕХ'][1]} <br><b>Работаем для вас:</b><br> <i>${genWorkTime('ЧЕХ')}`)
 /*
 	shops['ЧИС'][3] = DG.marker(shops['ЧИС'][0])
 		.on('click', function() {
