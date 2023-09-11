@@ -157,7 +157,9 @@ DG.then(function () {
 			blink(timeChoise)
 		})
 		.addTo(map)
-		.bindPopup(shops['БАУ'][1])
+		.bindPopup(`<p>${shops['БАУ'][1])}<br />${shops['БАУ'][4])}</p>`
+			
+			   
 /*
 	shops['БЕЛ'][3] = DG.marker(shops['БЕЛ'][0])
 		.on('click', function() {
