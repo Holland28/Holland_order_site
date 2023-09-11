@@ -157,7 +157,8 @@ DG.then(function () {
 			blink(timeChoise)
 		})
 		.addTo(map)
-		.bindPopup(`${shops['БАУ'][1]}\n ${shops['БАУ'][4]}`)
+		.bindPopup(`${shops['БАУ'][1]}
+  ${genWorkTime('БАУ')}`)
 			
 			   
 /*
@@ -550,7 +551,12 @@ function blink(element){
 
 }
 
-
+function genWorkTime(shop){
+	let data = shops[shop][4]
+	return `ПН-ПТ ${data.monfri}
+ 		СБ ${data.sat}
+   		ВС ${data.sun}`
+}
 
 timeChoise.onchange = function changeTime () {
 	timeChoise.style.backgroundColor = "#FFFFFF"
