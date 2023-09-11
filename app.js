@@ -554,8 +554,8 @@ function blink(element){
 function genWorkTime(shop){
 	let data = shops[shop][4]
 	return `ПН-ПТ ${data.monfri}
- 		СБ ${data.sat}
-   		ВС ${data.sun}`
+ СБ ${data.sat}
+ ВС ${data.sun}`
 }
 
 timeChoise.onchange = function changeTime () {
