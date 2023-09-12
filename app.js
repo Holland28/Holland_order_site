@@ -554,8 +554,7 @@ function genWorkTime(shop){
 	let data = shops[shop][4]
 	for (key in data) {
 		if (data[key] == '') {
-			data[key] = 'Закр')
-		}
+			data[key] = 'Закр'}
 	}
 	return `ПН-ПТ ${data.monfri} <br>
 		СБ ${data.sat} <br>
