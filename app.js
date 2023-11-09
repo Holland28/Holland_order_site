@@ -144,7 +144,7 @@ let shops = {
 		sat: '8-20',
 		sun: '8-20'
 	}],
-	'МАВ': [[55.749742, 49.189895], 'ул. Мавлютова, 17', 'Казань, Приволжский район', 'mav',{
+	'МАВ': [[55.753647, 49.189659], 'ул. Мавлютова, 17', 'Казань, Приволжский район', 'mav',{
 		monfri: '8-20',
 		sat: '8-20',
 		sun: '8-20'
@@ -183,8 +183,8 @@ DG.then(function () {
    let map, myLocation
    map = DG.map('map', {
    center: [55.83, 49.05],
-   zoom: 10,
-   minZoom: 10,
+   zoom: 12,
+   minZoom: 12,
    fullscreenControl: false
    })
 */
