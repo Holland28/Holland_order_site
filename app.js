@@ -183,8 +183,8 @@ DG.then(function () {
    let map, myLocation
    map = DG.map('map', {
    center: [55.83, 49.05],
-   zoom: 12,
-   minZoom: 12,
+   zoom: 11,
+   minZoom: 10,
    fullscreenControl: false
    })
 */
